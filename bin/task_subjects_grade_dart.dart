@@ -13,8 +13,11 @@ void main() {
   double sub4= double.parse(stdin.readLineSync()!);
   print("enter grade for subject 5");
   double sub5= double.parse(stdin.readLineSync()!);
-  
+  totalPercentage(sub1, sub2, sub3, sub4, sub5);
   showGrade(totalGrade(sub1, sub2, sub3, sub4, sub5));
+}
+void totalPercentage(double a,double b,double c,double d, double f) {
+  print("Your Grade precentage is : ${(a+b+c+d+f)/5}");
 }
 String totalGrade(double a,double b,double c,double d, double f){
   String grade;
